@@ -4,7 +4,7 @@
 import yaml
 from dlp_generator import create_generator
 
-config_filepath = 'config/new.yaml'
+config_filepath = 'config/pbomb_config.yaml'
 cfg = yaml.load(open(config_filepath, 'r'), Loader=yaml.FullLoader)
 cfg['Debug'] = True
 
