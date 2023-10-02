@@ -1,0 +1,15 @@
+# ======
+# g4.mac
+# ======
+
+/edep/hitSagitta drift 1.0 mm
+/edep/hitLength drift 1.0 mm
+/edep/update
+
+/generator/kinematics/bomb/config /global/homes/r/rradev/particle_bomb/config/pbomb_config.yaml
+/generator/kinematics/bomb/verbose 0
+/generator/kinematics/set bomb
+
+/generator/count/fixed/number 1
+/generator/count/set fixed
+/generator/add

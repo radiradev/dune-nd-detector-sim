@@ -1,0 +1,64 @@
+# ===============
+# mpvmpr_cfg.yaml
+# Particles: electron, muon, proton, pion, gamma
+# ===============
+SEED: -1
+GeneratorMPR:
+  NumEvent: [1, 1]
+  NumParticle: [1,1]
+
+  # why is this negative for ND Lar? 
+  XRange: [0,500]
+  YRange: [0,500]
+  ZRange: [0,500]
+  TRange: [0,10]
+  Particles:
+    -
+      PDG:  [13]
+      NumRange: [1,1]
+      KERange:  [30,50]
+      UseMom:   False
+      Weight:   1
+
+    - 
+      PDG:     [-13]
+      NumRange: [0,1]
+      KERange:  [0,1]
+      UseMom:   False
+      Weight:   1
+    -
+      PDG:      [11]
+      NumRange: [0,1]
+      KERange:  [0,1]
+      UseMom:   False
+      Weight:   1
+    - 
+      PDG:     [-11]
+      NumRange: [0,1]
+      KERange:  [0,1]
+      UseMom:   False
+      Weight:   1
+    -
+      PDG:      [22]
+      NumRange: [0,1]
+      KERange:  [0,1]
+      UseMom:   False
+      Weight:   1
+    - 
+      PDG:     [211]
+      NumRange: [0,1]
+      KERange:  [0,1]
+      UseMom:   False
+      Weight:   1
+    - 
+      PDG:     [-211]
+      NumRange: [0,1]
+      KERange:  [0,1]
+      UseMom:   False
+      Weight:   1
+    -
+      PDG:      [2112]
+      NumRange: [0,1]
+      KERange:  [0,1]
+      UseMom:   False
+      Weight:   1

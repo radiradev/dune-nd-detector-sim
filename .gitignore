@@ -1,0 +1,5 @@
+*.ipynb
+*.root
+*.h5
+
+/data
