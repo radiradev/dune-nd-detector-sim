@@ -3,3 +3,5 @@
 *.h5
 
 /data
+/larnd-sim
+/larnd-sim.venv

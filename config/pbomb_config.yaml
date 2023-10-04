@@ -8,9 +8,9 @@ GeneratorMPR:
   NumParticle: [1,1]
 
   # why is this negative for ND Lar? 
-  XRange: [0,500]
-  YRange: [0,500]
-  ZRange: [0,500]
+  XRange: [-300,300]
+  YRange: [-600,600]
+  ZRange: [-300,300]
   TRange: [0,10]
   Particles:
     -
