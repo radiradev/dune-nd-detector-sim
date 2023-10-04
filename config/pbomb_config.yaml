@@ -16,7 +16,7 @@ GeneratorMPR:
     -
       PDG:  [13]
       NumRange: [1,1]
-      KERange:  [30,50]
+      KERange:  [0,1]
       UseMom:   False
       Weight:   1
 
