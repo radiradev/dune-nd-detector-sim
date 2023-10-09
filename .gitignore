@@ -5,3 +5,10 @@
 /data
 /larnd-sim
 /larnd-sim.venv
+
+# Pycache
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook
+.ipynb_checkpoints

@@ -16,6 +16,7 @@ result = gen.Generate()
 
 # Convert the result into HEPEVT-like format, which is an array of length-15-array
 hepevt = gen.Flatten(result)
+print(hepevt)
 
 # dump to a text file
 with open('data/new_pbomb.hepevt', 'w') as f:

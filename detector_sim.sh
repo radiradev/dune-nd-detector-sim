@@ -1,11 +1,8 @@
 #!/bin/bash
-NUM_EVENTS=100
-edep-sim -e $NUM_EVENTS -g config/nd_hall_only_lar.gdml -o  /global/cfs/cdirs/dune/users/rradev/edeps_small.root config/edep.mac
+#SBATCH --image=deeplearnphysics/dune-nd-sim:ub20.04-cpubase-edep2supera
+#SBATCH --qos=regular
+#SBATCH --constraint=cpu
+#SBATCH --nodes=1
+#SBATCH --time=02:00:00
 
-# if edep_out.h5 exists, delete it
-if [ -f data/edep_out.h5 ]; then
-    rm data/edep_out.h5
-fi
-
-# convert to h5
-python3 dump_tree.py /global/cfs/cdirs/dune/users/rradev/edeps_small.root /global/cfs/cdirs/dune/users/rradev/edeps_small.h5
+bash scripts/detector_sim.sh
