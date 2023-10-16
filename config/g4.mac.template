@@ -6,7 +6,7 @@
 /edep/hitLength drift 1.0 mm
 /edep/update
 
-/generator/kinematics/bomb/config /global/homes/r/rradev/particle_bomb/config/second_gen.yaml
+/generator/kinematics/bomb/config PBOMB_CONFIG_PLACEHOLDER
 /generator/kinematics/bomb/verbose 0
 /generator/kinematics/set bomb
 

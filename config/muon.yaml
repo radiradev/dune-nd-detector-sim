@@ -1,0 +1,28 @@
+# ===============
+# mpvmpr_cfg.yaml
+# Particles: electron, muon, proton, pion, gamma
+# ===============
+SEED: -1
+GeneratorMPV:
+  NumEvent: [1, 1]
+  NumParticle: [1, 1]
+  # ranges from tracks x [-350, 350], y [-140, 150], z [412, 920]
+
+  XRange: [-500,500]  # The x-span [mm] of the volume to sample a vertex
+  YRange: [-500,500]  # The y-span [mm] of the volume to sample a vertex
+  ZRange: [6000, 7000] # The z-span [mm] of the volume to sample a vertex
+  TRange: [0, 10]  # The time-span [ns] to sample a vertex
+  Particles:
+    -
+      PDG:  [13] # muon
+      NumRange: [1,1]
+      KERange:  [0.05, 1]
+      UseMom:   False
+      Weight:   1
+
+    - 
+      PDG:     [-13] # antimuon
+      NumRange: [1,1]
+      KERange:  [0.05,1]
+      UseMom:   False
+      Weight:   1
